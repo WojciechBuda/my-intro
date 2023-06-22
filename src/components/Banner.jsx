@@ -30,7 +30,7 @@ const Banner = () => {
             </p>
             <div className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0">
               <button className="btn btn-lg mr-2">Napisz do mnie</button>
-              <a href="#" className="text-gradient btn-link">
+              <a href="https://linktr.ee/wojtek00?utm_source=linktree_admin_share" className="text-gradient btn-link">
                 My Portfolio
               </a>
             </div>
