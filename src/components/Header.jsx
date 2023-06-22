@@ -5,7 +5,7 @@ const Header = () => {
         <div className="flex justify-between">
           <div>
             <p className="text-gradient hover:text-gradient text-3xl no-select">
-              WOJCIECH BUDA
+              WOJCIECH BUDA - zrobić pasek wyciągna z boku strony zamiast navbara na dole
             </p>
           </div>
 
