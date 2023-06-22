@@ -1,5 +1,3 @@
-import React from "react";
-
 import { BiUser } from "react-icons/bi";
 import { BsBriefcaseFill, BsChatSquareDots, BsHouse } from "react-icons/bs";
 import { MdOutlineDesignServices } from "react-icons/md";
