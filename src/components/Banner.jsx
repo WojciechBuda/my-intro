@@ -1,7 +1,5 @@
 import { FaGithub, FaFacebook, FaTwitter } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
-// import { motion } from "framer-motion";
-// import { fadeIn } from "../variants"
 import Image from "../assets/avatar.png";
 
 const Banner = () => {
@@ -34,17 +32,17 @@ const Banner = () => {
                 My Portfolio
               </a>
             </div>
-          </div>
-          <div className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">
-            <a href="https://www.facebook.com/wojciech.buda.69">
-              <FaFacebook />
-            </a>
-            <a href="https://twitter.com/WojtaszekB00">
-              <FaTwitter />
-            </a>
-            <a href="https://github.com/WojciechBuda">
-              <FaGithub />
-            </a>
+            <div className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">
+              <a href="https://www.facebook.com/wojciech.buda.69">
+                <FaFacebook />
+              </a>
+              <a href="https://twitter.com/WojtaszekB00">
+                <FaTwitter />
+              </a>
+              <a href="https://github.com/WojciechBuda">
+                <FaGithub />
+              </a>
+            </div>
           </div>
           <div className="hidden lg:flex">
             <img src={Image} alt="" />
@@ -56,3 +54,4 @@ const Banner = () => {
 };
 
 export default Banner;
+
