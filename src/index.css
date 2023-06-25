@@ -11,6 +11,7 @@
   user-select: none;
 }
 
+
 .btn {
   /* background: linear-gradient(
     92.23deg,
@@ -20,7 +21,7 @@
     #406aff 117.04%
   ); */
   background-color: #730f9b;
-  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  box-shadow: 0px 4.42184px 107.23px rgba(218, 56, 240, 0.51);
 }
 
 .btn:hover {
@@ -51,6 +52,8 @@
   padding: 1rem;
   border-radius: 100%;
 }
+
+
 
 
 @layer base {
