@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 
 const App = () => {
   return (
-    <div className="bg-sitebg bg-no-repeat bg-cover overflow-hidden">
+    <div className="bg-mine bg-no-repeat bg-cover overflow-hidden">
       <Header />
       <Banner />
       <Nav />
