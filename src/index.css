@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 .bg-mine {
-  background-image: url(C:\_repos\portfolio\website-tailwind-react-vite\stronka\src\assets\sitebg.jpg);
+  background-image: url(../src/assets/sitebg.jpg);
   }
 .bg-about {
-  background-image: url(C:\_repos\portfolio\website-tailwind-react-vite\stronka\src\assets\about.jpg);
+  background-image: url(../src/assets/about.jpg);
 }
 .no-select {
   -webkit-user-select: none;
