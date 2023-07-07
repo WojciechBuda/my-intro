@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-serv {
+  background-image: url(../src/assets/services.png);
+}
 .bg-mine {
   background-image: url(../src/assets/sitebg.jpg);
   }
