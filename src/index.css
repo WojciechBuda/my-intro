@@ -2,12 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-nav {
+  background-image: radial-gradient(#3e3a38, #032030);
+}
+
+
+.bg-serv {
+  background-image: url(../src/assets/services.png);
+}
+
 .bg-mine {
-  background-image: url(../src/assets/sitebg.jpg);
-  }
+  background-image: url(../src/assets/stars.jpg);
+}
+
 .bg-about {
   background-image: url(../src/assets/about.jpg);
 }
+
+.bg-winter {
+  background-image: url(../src/assets/winter.jpg);
+}
+
+.bg-summit {
+  background-image: url(../src/assets/ice_axe.jpg);
+}
+
+.bg-climb {
+  background-image: url(../src/assets/climb.jpg);
+}
+
+/* .custom-shape {
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+} */
+
 .no-select {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -17,20 +46,20 @@
 
 
 .btn {
-  
-  background-color: #730f9b;
+
+  background-image: radial-gradient(#4e281f, #36505e);
   box-shadow: 0px 4.42184px 107.23px rgba(218, 56, 240, 0.51);
 }
 
 .btn:hover {
-  
-  background-color: #099add;
+
+  background-color: #ceb5af;
 }
 
 .gradient,
 .active {
-  
-  background-color: #532268;
+
+  background-color: none;
 }
 
 .active {
@@ -46,39 +75,50 @@
   body {
     @apply font-secondary text-lg leading-8 text-white;
   }
+
   .h2 {
     @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
   }
+
   .h3 {
     @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
   }
+
   .btn {
-    @apply rounded-full font-primary text-white font-medium;
+    @apply rounded-full font-primary from-[#b82805] to-[#0d6c9f] font-medium;
   }
+
   .btn-sm {
     @apply h-[48px] px-6 text-sm;
   }
+
   .btn-lg {
     @apply h-[56px] px-10 text-base;
   }
+
   .btn-link {
     @apply text-base;
   }
+
   .text-gradient {
-    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#b82805] to-[#0d6c9f] font-bold font-primary hover: from-[#095e8b] hover:to-[#b91717];
   }
+
   .section {
-    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+    @apply py-8 lg: py-24 lg:h-screen flex items-center;
   }
 }
+
 .font-secondary {
   font-family: "Your Secondary Font", sans-serif;
   /* Other font-related styles */
 }
+
 .font-primary {
   font-family: "Your Primary Font", sans-serif;
   /* Other font-related styles */
 }
+
 .font-t {
-  font-family: 'Bakbak One', cursive;
+  font-family: 'Bakbak One', ;
 }
