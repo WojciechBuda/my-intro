@@ -10,7 +10,7 @@ const Banner = () => {
       className="min-h-[85vh] lg:min-h[78vh] flex items-center"
       id="home"
     >
-      <div className="container mx-auto no-select">
+      <div className="lg:mx-3 container mx-auto no-select">
         <div className="flex flex-col lg:flex-row gap-y-8 lg:items-center lg:gap-x-12">
           <div className="flex-1 text-center font-secondary lg:text-left ">
             <motion.h1
@@ -29,10 +29,17 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-6 text-[60px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
             >
-              <span className="text-white mr-4">Robię jako</span>
+              <span className="text-white mr-4">I`m</span>
               <TypeAnimation
                 className="text-gradient"
-                sequence={["Murarz", 2000, "Tynkarz", 2000, "Akrobata", 2000]}
+                sequence={[
+                  " a Student",
+                  2000,
+                  " a Climber",
+                  2000,
+                  "Your future DEV",
+                  2000,
+                ]}
                 speed={50}
                 wrapper="span"
                 repeat={Infinity}
@@ -45,9 +52,10 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 mx-2-lg mx-auto lg:mx-0"
             >
-              Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba cenić,
-              ten tylko się dowie, kto cię stracił. Dziś piękność twą w całej
-              ozdobie, widzę i opisuję, bo tęsknię po tobie.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              molestiae accusantium voluptate similique nam beatae voluptatum
+              dignissimos earum totam quisquam numquam nemo exercitationem ab
+              quidem minima minus corrupti, distinctio labore.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.7)}
@@ -56,10 +64,12 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg mr-2">Napisz do mnie</button>
+              <button className="btn btn-lg mr-2 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
+                Contact me
+              </button>
               <a
                 href="https://linktr.ee/wojtek00?utm_source=linktree_admin_share"
-                className="text-gradient btn-link"
+                className="text-gradient btn-link transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"
               >
                 My Portfolio
               </a>
@@ -71,15 +81,26 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 lg:ml-9 lg:scale-150 "
             >
-              <a href="https://www.facebook.com/wojciech.buda.69">
-                <FaFacebook />
-              </a>
-              <a href="https://twitter.com/WojtaszekB00">
-                <FaTwitter />
-              </a>
-              <a href="https://github.com/WojciechBuda">
-                <FaGithub />
-              </a>
+              <div className="flex space-x-4 scale-150 ml-2">
+                <a
+                  className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                  href="https://www.facebook.com/wojciech.buda.69"
+                >
+                  <FaFacebook />
+                </a>
+                <a
+                  className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                  href="https://twitter.com/WojtaszekB00"
+                >
+                  <FaTwitter />
+                </a>
+                <a
+                  className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                  href="https://github.com/WojciechBuda"
+                >
+                  <FaGithub />
+                </a>
+              </div>
             </motion.div>
           </div>
           <motion.div
@@ -88,9 +109,7 @@ const Banner = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
             className="hidden lg:flex flex-1 max-w[320px] lg:max-w-[482px]"
-          >
-            <img src={Image} alt="" />
-          </motion.div>
+          ></motion.div>
         </div>
       </div>
     </section>
