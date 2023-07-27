@@ -1,18 +1,23 @@
-import {} from "react-icons/bs";
+import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const Hobby = () => {
+  const handleAnswerClick = (answer) => {
+    console.log(`Wybrana odpowiedź: ${answer}`);
+  };
+
   return (
     <section className="section" id="services">
-      <div className="mt-16 container ml-44 mx-auto flex-1 justify-center items-center lg:flex-row lg:items-start lg:justify-start h-screen">
-        <div className="mx-auto text-left">
+      <div className="flex flex-row space-x-6">
+        <div className="mx-auto ml-24">
           <h2 className="h2 text-gradient">My Hobby</h2>
-          <h3 className="h3">These are activities I am a huge fan of...</h3>
+          <h3 className="h3">These are activities <br/>I am a huge fan of</h3>
         </div>
-        <div className="flex flex-col h-auto w-auto justify-items-center lg:flex-row lg:items-center">
+        <div className="flex h-auto w-auto justify-items-center lg:flex-row lg:items-center space-x-8">
           <div className="flex-1">
-            <motion.div
+            <motion.button
+              onClick={() => handleAnswerClick("winter")}
               variants={fadeIn("right", 0.3)}
               initial="hidden"
               whileInView={"show"}
@@ -25,10 +30,11 @@ const Hobby = () => {
                 width: "350px",
                 height: "350px",
               }}
-            ></motion.div>
+            ></motion.button>
           </div>
           <div className="flex-1 rounded-lg overflow-hidden">
-            <motion.div
+            <motion.button
+              onClick={() => handleAnswerClick("climb")}
               variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView={"show"}
@@ -41,10 +47,11 @@ const Hobby = () => {
                 width: "350px",
                 height: "350px",
               }}
-            ></motion.div>
+            ></motion.button>
           </div>
           <div className="flex-1 transition ease-in-out">
-            <motion.div
+            <motion.button
+              onClick={() => handleAnswerClick("summit")}
               variants={fadeIn("left", 0.3)}
               initial="hidden"
               whileInView={"show"}
@@ -57,7 +64,7 @@ const Hobby = () => {
                 width: "350px",
                 height: "350px",
               }}
-            ></motion.div>
+            ></motion.button>
           </div>
         </div>
       </div>
