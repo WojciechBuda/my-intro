@@ -6,10 +6,10 @@ const Hobby = () => {
   const handleAnswerClick = (answer) => {
     console.log(`Wybrana odpowiedź: ${answer}`);
   };
-
+dupa
   return (
     <section className="section" id="services">
-      <div className="flex flex-row space-x-6">
+      <div className="flex flex-row space-x-6 flex-2 mx-auto">
         <div className="mx-auto ml-24">
           <h2 className="h2 text-gradient">My Hobby</h2>
           <h3 className="h3">These are activities <br/>I am a huge fan of</h3>
