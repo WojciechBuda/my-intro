@@ -1,6 +1,5 @@
 import { FaGithub, FaFacebook, FaTwitter } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
-import Image from "../assets/avatar.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
