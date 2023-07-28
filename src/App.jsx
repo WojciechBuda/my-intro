@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import Nav from "./components/Nav";
 import About from "./components/About";
 import Hobby from "./components/Hobby";
+import Menu from "./components/Menu";
+
 
 const App = () => {
   return (
@@ -13,6 +15,7 @@ const App = () => {
       <Nav />
       <About />
       <Hobby />
+      <Menu />
     </div>
   );
 };

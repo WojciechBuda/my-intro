@@ -11,7 +11,7 @@ const Banner = () => {
     >
       <div className="lg:mx-3 container mx-auto no-select">
         <div className="flex flex-col lg:flex-row gap-y-8 lg:items-center lg:gap-x-12">
-          <div className="flex-1 text-center font-secondary lg:text-left ">
+          <div className="flex-1 text-center font-secondary lg:text-left">
             <motion.h1
               variants={fadeIn("up", 0.3)}
               initial="hidden"
