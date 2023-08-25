@@ -12,7 +12,7 @@ const Hobby = () => {
       className="section min-h-[85vh] lg:min-h[78vh] flex items-center"
       id="services"
     >
-      <div className="flex mx-auto shadow-md overflow-hidden">
+      <div className="flex mx-auto">
         <div className="flex md:flex-row">
           <div className="p-8 flex flex-col text-center gap-y-8 lg:items-center lg:gap-x-12">
             <a className="block mt-1 text-lg leading-tight font-extrabold">
